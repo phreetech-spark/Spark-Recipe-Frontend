@@ -1,0 +1,47 @@
+<div>
+<h2>UPLOAD</h2>
+            <form [formGroup]="addrecipe">
+                <div class="time">
+                <div class="onetime">
+                    <h2>RECIPE DATA</h2>
+                 <div class="formadd">
+                    <label for="title">Title</label>
+                    <input type="text" class="formcontrol" id="title" formControlName="title" placeholder="">
+                  </div>
+                  <div class="formadd">
+                    <label for="url">URL</label>
+                    <input type="url" class="formcontrol" id="url" formControlName="url" placeholder="Add url">
+                  </div>
+                  <div class="formadd">
+                    <label for="image">Image</label>
+                    <input type="" class="formcontrol" id="image" formControlName="image" placeholder="Add image">
+                  </div>
+                  <div class="formadd">
+                    <label for="text">Publisher</label>
+                    <input type="text" class="formcontrol" id="publisher" formControlName="publisher" placeholder="">
+                  </div>
+                  <div class="formadd">
+                    <label for="preptime">Prep Time</label>
+                    <input type="text" class="formcontrol" id="preptime" formControlName="preptime" placeholder="">
+                  </div>
+                  <div class="formadd">
+                    <label for="text">Servings</label>
+                    <input type="text" class="formcontrol" id="servings" formControlName="servings" placeholder="">
+                  </div>
+                </div>
+                <div class="twotime">
+                    <div class="formadd">
+                        <label for="text">INGREDIENTS</label><br>
+                        <input type="text" class="formcontrol" id="ingredients" formControlName="ingredients" placeholder="">
+                      </div>
+                </div>
+            </div>
+            <div class="thirdtime">
+                <div class="formadd">
+                    <label for="text">INSTRUCTIONS</label><br>
+                    <input type="text" class="formcontrol" id="instructions" formControlName="instructions" placeholder="">
+                  </div>
+            </div>
+            <button type="button" (click)="submit()" class="">Upload</button>
+            </form>
+        </div>

@@ -1,0 +1,41 @@
+<header class="header">
+    <div class="logo">
+      Recipe Hub
+    </div>
+    <div class="search">
+      <input type="text" class="search-input" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="nav-link">
+      <p href="#" class="nav-link"><a routerLink="/home">Home</a></p>
+      <div class="dropdown">
+        <p class="dropbtn">Recipes<i class="fa fa-caret-down"></i></p>
+        <div id="mydropdown" class="dropdown-content">
+            <li><a routerLink="/breaklunchdrop">Breakfast</a></li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+            <li>Desserts</li>
+            <li>Snacks and Appetizers</li>
+            <li>Recipe by ingredient</li>
+            <li>Recipe by method</li>
+            <li>Recipe by diet</li>
+            <li>Recipe by World Cuisine</li>
+            <li>Nigerian cuisine</li>
+            <li>Christmas recipe</li>
+            <li>Easter recipe</li>
+        </div>
+      </div>
+      <div class="dropdown">
+      <p class="dropbtn">More
+        <i class="fa fa-caret-down"></i></p>
+      <div id="mydropdown" class="dropdown-content">
+        <a routerLink="/recipedd">RECIPES</a>
+        <a routerLink="/addrecipe">UPLOAD RECIPIES</a>
+        <a routerLink="/quickandeasy">QUICK AND EASY</a>
+        <a routerLink="/tipsandtechnique">TIPS AND TECHNIQUES</a>
+        <a routerLink="/logout">Log Out</a>
+      </div>
+    </div>
+      <a class="nav-link" routerLink="/profile"><img src="assets/account_circle.jpg" alt="account icon"></a>
+    </div>
+</header>

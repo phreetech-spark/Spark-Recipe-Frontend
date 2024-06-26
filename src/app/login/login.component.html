@@ -1,0 +1,39 @@
+
+    <div class="upsection">
+        <div class="upsection-left">
+            
+            <h3>WELCOME BACK!</h3>
+            <p>Sign in to your account</p>
+            <div>
+                <form [formGroup]="loginform">
+                    <div class="forml">
+                        <label for="email">Email</label><br>
+                        <input type="email" class="formcontrol" id="email" formControlName="email" placeholder="Enter your email">
+                    </div>
+                    <div class="forml">
+                        <label for="password">Password</label><br>
+                        <input type="password" class="formcontrol" id="password" formControlName="email" placeholder="Enter your password">
+                    </div>
+                    <p><a routerLink="/forgotpassword">Forgot Password?</a></p>
+                </form>
+                <div class="sg">
+                <button type="button" (click)="submit()" class="" >Sign In</button>
+                </div>
+            </div>
+            
+            <div class="ment">
+                <p> First time, click here <a routerLink="/signup">Sign Up</a><br>
+                    or sign in with<br></p>
+                <div class="social"><img src="assets/googleicon.png"><button>Sign in with Google</button><br></div>
+                <div class="social"><img src="assets/instagram.png"><button>Sign in with Instagram</button><br></div>
+                <div class="social"><img src="assets/facebook01.png"><button>Sign in with Faacebook</button><br></div>
+                             
+                   
+            </div>
+        </div>
+        <div class="upsection-right">
+            <img src="assets/loginchef.jpg" alt="chef">
+        </div>
+
+    </div>
+    <app-footer></app-footer>

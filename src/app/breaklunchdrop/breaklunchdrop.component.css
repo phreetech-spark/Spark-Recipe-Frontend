@@ -1,0 +1,29 @@
+.mainsec{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.mainsec-right{
+    margin-bottom: 20px;
+    width:100% ;
+}
+.mainsec-right img{
+    width: 500px;
+}
+.mainsec-left{
+    
+    width:100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height:157px ;
+    width:597px ;
+    padding-left:231px ;
+    margin-bottom: 20px;
+}
+.mainsec-left img{
+    height: 157px;
+    width: 179px;
+    margin: 10px;
+}

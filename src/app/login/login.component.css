@@ -1,0 +1,74 @@
+
+.upsection{
+display: flex;
+flex-direction: row;
+}
+.upsection-left{
+    width:100% ;
+    padding-left: 96px;
+    padding-top: 5%;
+}
+
+.upsection-left h3{
+    margin: auto;
+    text-align: left;
+}
+.upsection-left p{
+    text-align: left;
+}
+.ment{
+    text-align: center;
+    }
+    .ment p{
+        text-align: center;
+    }
+
+input{
+    padding: 7px;
+    font-size: 16px;
+    width: 100%;
+    align-self: left;
+    border-radius: 10px;
+}
+form{
+    max-width: 500px;
+    margin: left 96px; ;
+
+}
+.forml{
+    margin: 20px;
+}
+.upsection-right{ 
+    width: 100%;
+
+}
+.social{
+ margin: 20px;
+}
+.social button{
+    border: 0;
+}
+.sg{
+    text-align: center;
+    margin-top: 50px;
+}
+.sg button{
+    padding: 8px;
+    width: 40%;
+    background-color:#B5C18E;
+    color: white;
+    font-size: 16px;
+    gap: 15px;
+    border-radius: 20px;
+}
+button{
+    align-self: center;
+}
+
+p{
+    text-align: left;
+}
+.ment img{
+    width: 24px;
+    height: 24px;
+}

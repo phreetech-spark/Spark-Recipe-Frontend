@@ -1,0 +1,63 @@
+
+.topsection{
+    display: flex;
+    flex-direction: row;
+    
+}
+.topsection-left{
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 93px;
+    text-align: center;
+}
+.topsection-left h3{
+    margin: auto;
+    text-align: center;
+}
+.formg{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 8px 0;
+    text-align: inherit;
+
+}
+input{
+    padding: 4px;
+    font-size: 16px;
+    width: 60%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.haha{
+    margin-top: 50px;
+    align-content: center;
+
+}
+.haha button{
+    padding: 8px;
+    width: 50%;
+    background-color: #B5C18E;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    gap: 100px;
+}
+.topsection-right{ 
+    width: 100%; 
+    color: #45522C;
+}
+.lasttwo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 120px;
+}
+.terms button{
+    border: 0;
+    color: #B5C18E;
+    background-color: whitesmoke;
+
+}
+
