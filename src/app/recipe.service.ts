@@ -10,12 +10,12 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   createuser(user:any): Observable<any>{
-    return this.http.post("http://localhost:3001/add_new_user",user)
+    return this.http.post("https://spark-recipe.vercel.app/add_new_user",user)
   }
   addrecipe(recipe:any): Observable<any>{
-    return this.http.post("http://localhost:3001/addrecipe",recipe)
+    return this.http.post("https://spark-recipe.vercel.app/addrecipe",recipe)
   }
   login(login:any):Observable<any>{
-    return this.http.post("http://localhost:3001/userlogin",login)
+    return this.http.post("https://spark-recipe.vercel.app/userlogin",login)
   }
 }

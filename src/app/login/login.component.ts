@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 import { RecipeService } from '../recipe.service';
@@ -12,27 +12,32 @@ import { RecipeService } from '../recipe.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  loginform:FormGroup;
-  constructor(private fb: FormBuilder, private service:RecipeService){this.loginform = this.fb.group({
-    email: ['',Validators.email],
-    password: ['',Validators.required],})}
+  loginform: FormGroup;
+  constructor(private fb: FormBuilder, private service: RecipeService) {
+    this.loginform = this.fb.group({
+      email: ['', Validators.email],
+      password: ['', Validators.required],
+    })
+  }
 
-    submit(){
-      if (this.loginform.valid){
-        console.log("valid")
-        this.service.login(this.loginform.value).subscribe({
-          next(value) {
-            console.log(value)  
-          },
-          error(err) {
-            console.log(err)
-          },
-        })
-      
-      }
-    else{
+  submit() {
+    console.log(this.loginform.value)
+    if (this.loginform.valid) {
+      console.log("valid")
+      this.service.login(this.loginform.value).subscribe({
+        next(value) {
+          console.log(value)
+        },
+        error(err) {
+          console.log(err)
+        },
+      })
+
+    }
+    else {
       console.log("invalid")
     }
-    }}
-  
-    
+  }
+}
+
+
