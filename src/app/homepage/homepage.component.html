@@ -1,23 +1,8 @@
-<header class="header">
-    <div class="logo">
-      Recipe Hub
-    </div>
-    <div class="search">
-      <input type="text" class="search-input" placeholder="Search">
-      <button>Search</button>
-    </div>
-    <div class="nav-link">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">Recipes</a>
-      <a href="#" class="nav-link">More</a>
-      <p><a routerLink="/signup">Sign up</a>/<a routerLink="/login"> Log in</a></p>
-    </div>
-  </header>
-  
-  <app-hero></app-hero>
-  
+
+    <app-hero></app-hero>
+
       <section class="cuisine">
-        <div class="container">
+        <div class="">
           <h2>WHATS YOUR FAVORITE CUISINE?</h2>
           <div class="cuisine-options">
             <div class="option">
@@ -47,59 +32,65 @@
           </div>
         </div>
       </section>
-  
-      <section class="recipes">
-        <img src="assets/ricetrending.jpg">
-        <div class="container">
-          <h2>TRENDING RECIPES</h2>
-          <div class="recipe-cards">
-            <div class="card">
-              <img src="assets/pasta.jpg" alt="Pasta dish">
-              <div>
-              <h3>Pasta</h3>
-              <ul>
-                <li>Lorem ipsum</li>
-                <li>1/4 cup vegetable oil</li>
-                <li>1 large onion, finely chopped</li>
-                <li>3 cloves garlic, minced</li>
-                <li>1-inch piece ginger, minced</li>
-                <li>1 red bell pepper, chopped</li>
-                <li>1 green bell pepper, chopped</li>
-              </ul>
-            </div>
-            </div>
-            <div class="card">
-              <img src="assets/Jollof rice.jpg" alt="Jollof rice">
-              <div>
-              <h3>Jollof Rice</h3>
-              <p>Lorem ipsum dolor sit amet<br> consec Leo ultrices inhendrerit<br> eleifend mauris bibendum luctus<br> lobortis et.</p>
+
+     <div class="container-xxl">
+      <section class="recipes my-5">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <img class="w-100" src="assets/ricetrending.jpg">
+          </div>
+          <div class="col-6">
+            <h2 class="recipe-title">TRENDING RECIPES</h2>
+            <div class="recipe-cards">
+              <div class="recipe-card">
+                <img src="assets/pasta.jpg" class="" alt="Pasta dish">
+                <div>
+                <h3>Pasta</h3>
+                <ul>
+                  <li>Lorem ipsum</li>
+                  <li>1/4 cup vegetable oil</li>
+                  <li>1 large onion, finely chopped</li>
+                  <li>3 cloves garlic, minced</li>
+                  <li>1-inch piece ginger, minced</li>
+                  <li>1 red bell pepper, chopped</li>
+                  <li>1 green bell pepper, chopped</li>
+                </ul>
               </div>
-            </div>
-            <div class="card">
-              <img src="assets/Steak 1.jpg" alt="Steak dish">
-              <div>
-              <h3>Steak</h3>
-              <p>Lorem ipsum dolor sit amet consec Leo ultrices inhendrerit<br> eleifend mauris bibendum luctus<br> lobortis et.</p>
-            </div>
+              </div>
+              <div class="recipe-card">
+                <img src="assets/Jollof rice.jpg" alt="Jollof rice">
+                <div>
+                <h3>Jollof Rice</h3>
+                <p>Lorem ipsum dolor sit amet consec Leo ultrices inhendrerit eleifend mauris bibendum luctus lobortis et.</p>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <img src="assets/Steak 1.jpg" alt="Steak dish">
+                <div>
+                <h3>Steak</h3>
+                <p>Lorem ipsum dolor sit amet consec Leo ultrices inhendrerit eleifend mauris bibendum luctus lobortis et.</p>
+              </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-  
+
       <section class="about">
-        <div class="container">
+        <div class="">
           <div class="about-content">
-            <h2>Recipe Hub</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Laoreet eget molestie mus a sapien tempus arcu lectus. Nunc ullam<br>
+            <h2 class="about-title">Recipe Hub</h2>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur. Laoreet eget molestie mus a sapien tempus arcu lectus. Nunc ullam<br>
               corper sem imperdiet dignissim neque viverra sed amet laoreet. Duis nulla etiam aliquet tellus lacus eget mi. Sed<br>
               ac dapibus magna vulputate malesuada eu felis. Id sem cras dis nisl interdum id. Lorem ipsum dolor sit amet<br>
               consectetur. Laoreet eget molestie mus a sapien tempus arcu lectus. Nunc ullamcorper sem imperdiet dignissim<br>
               neque viverra sed amet laoreet. Duis nulla etiam aliquet tellus lacus eget mi. Sed ac dapibus magna vulputate<br>
               malesuada eu felis. Id sem cras dis nisl interdum id.
             </p>
-            <button>READ MORE</button>
+            <button class="btn read-more my-5">READ MORE</button>
           </div>
         </div>
       </section>
-     <app-footer></app-footer>
-  
+     </div>
+
+

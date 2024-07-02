@@ -1,55 +1,68 @@
 
-    <div class="topsection">
-        <div class="topsection-left">
-            <h3>Welcome to Your One stop journey Into<br>
-                A Never Ending Season of Culinary <br>
-                Mastery</h3>
-                <div>
-                    <form [formGroup]="signupform">
-                      <div class="formg">
-                        <label for="name">Name</label><br>
-                        <input type="text" class="formcontrol" id="name" formControlName="fullname" placeholder="Enter your name">
-                      </div>
-                      <div class="formg">
-                        <label for="email">Email</label><br>
-                        <input type="email" class="formcontrol" id="email" formControlName="email" placeholder="Enter your email">
-                      </div>
-                      <div class="formg">
-                        <label for="password">Password</label><br>
-                        <input type="password" class="formcontrol" id="password" formControlName="password" placeholder="Enter your password">
-                      </div>
-                      <div class="formg">
-                        <label for="confirm_password">Confirm Password</label><br>
-                        <input type="password" class="formcontrol" id="confirm_password" formControlName="confirm_password" placeholder="Confirm password">
-                      </div>
-                      <div class="lasttwo">
-                       <div class="formg">
-                        <label for="nationality">Nationality</label><br>
-                        <input type="text" class="formcontrol" id="nationality" formControlName="nationality" placeholder="Select Nationality">
-                       </div>
-                       <div class="formg">
-                        <label for="city">City</label><br>
-                        <input type="text" class="formcontrol" id="city" formControlName="city" placeholder="Select City">
-                       </div>
-                      </div>
-                     
-                    </form>
-                    <div class="haha">
-                      <button type="button" (click)="submit()" class="">Signup</button>
-                      <p>Already have an account? <a routerLink="/login">Login</a></p>
-                      <div class="terms">
-                        <p>By clicking Signup,you agree to our<br><button>Terms and Conditions</button></p>
+    <div class="auth-section">
+        <div class="auth-section-left">
+           <div class="container">
+            <div class="auth-section-left-content">
+              <header class="logo-container">
+                <img src="assets/logo.png" width="150" class="logo" alt="" srcset="">
+              </header>
+              <div>
+                <div class="auth-section-title-container">
+                  <h3 class="auth-section-title">Welcome to Your One stop<br>journey Into
+                    A Never Ending<br>Season of Culinary
+                    Mastery</h3>
+                </div>
+                  <div>
+                      <form [formGroup]="signupform">
+                        <div class="mb-4">
+                          <label for="name" class="form-label fw-medium">Name</label>
+                          <input type="text" class="form-control rounded-3 border-green" id="name" formControlName="fullname" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                          <label for="email" class="form-label fw-medium">Email</label>
+                          <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                          <label for="password" class="form-label fw-medium">Password</label>
+                          <input type="password" class="form-control rounded-3 border-green" id="password" formControlName="password" placeholder="Enter your password">
+                        </div>
+                        <div class="mb-4">
+                          <label for="confirm_password" class="form-label fw-medium">Confirm Password</label>
+                          <input type="password" class="form-control rounded-3 border-green" id="confirm_password" formControlName="confirm_password" placeholder="Confirm password">
+                        </div>
+                        <div class="row">
+                         <div class="col-6">
+                          <div class="mb-4">
+                            <label for="nationality" class="form-label fw-medium">Nationality</label>
+                            <input type="text" class="form-control rounded-3 border-green" id="nationality" formControlName="nationality" placeholder="Select Nationality">
+                           </div>
+                         </div>
+                        <div class="col-6">
+                          <div class="mb-4">
+                            <label for="city" class="form-label fw-medium">City</label>
+                            <input type="text" class="form-control rounded-3 border-green" id="city" formControlName="city" placeholder="Select City">
+                           </div>
+                        </div>
+                        </div>
+
+                      </form>
+                      <div class="form-footer">
+                        <button type="button" (click)="submit()" class="btn auth-btn">Sign up</button>
+                        <p>Already have an account? <a class="link fw-medium" routerLink="/login">Login</a></p>
+                        <div class="terms">
+                          <p>By clicking Signup,you agree to our<br><a class="link fw-medium">Terms and Conditions</a></p>
+
+                        </div>
 
                       </div>
-                      
-                    </div>
-                    
-                    
-                </div>
+
+
+                  </div>
+              </div>
+             </div>
+           </div>
         </div>
-        <div class="topsection-right">
+        <div class="auth-section-right">
             <img src="assets/Pizza_food.jpg" alt="pizza">
         </div>
  </div>
- <app-footer></app-footer>
-      
