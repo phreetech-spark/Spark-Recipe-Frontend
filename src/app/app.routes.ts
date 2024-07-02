@@ -69,10 +69,12 @@ export const routes: Routes = [
     },
     {
         path:'',
-        redirectTo:'homepage'
+        redirectTo:'homepage',
+        pathMatch:'full'
     },
     {
         path:'**',
-        redirectTo:'homepage'
+        redirectTo:'homepage',
+        pathMatch:'full'
     }
 ]
