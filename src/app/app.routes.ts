@@ -66,5 +66,13 @@ export const routes: Routes = [
     {
         path:'addrecipe',
         component:AddrecipeComponent
+    },
+    {
+        path:'',
+        redirectTo:'homepage'
+    },
+    {
+        path:'**',
+        redirectTo:'homepage'
     }
 ]
