@@ -1,0 +1,61 @@
+<header class="navbar-container">
+    <nav class="container-xxl">
+      <div class="navbar-content">
+        <img src="assets/logo.png" class="logo" alt="" srcset="">
+      <div class="nav-input-container">
+        <input type="text" class="form-control nav-input" placeholder="Search">
+        <span class="search-icon">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.875 1.24909C6.13631 1.24909 5.40486 1.39459 4.72241 1.67727C4.03995 1.95995 3.41985 2.37429 2.89752 2.89662C2.37519 3.41895 1.96086 4.03904 1.67818 4.7215C1.39549 5.40396 1.25 6.13541 1.25 6.87409C1.25 7.61278 1.39549 8.34423 1.67818 9.02669C1.96086 9.70914 2.37519 10.3292 2.89752 10.8516C3.41985 11.3739 4.03995 11.7882 4.72241 12.0709C5.40486 12.3536 6.13631 12.4991 6.875 12.4991C8.36684 12.4991 9.79758 11.9065 10.8525 10.8516C11.9074 9.79668 12.5 8.36594 12.5 6.87409C12.5 5.38225 11.9074 3.95151 10.8525 2.89662C9.79758 1.84173 8.36684 1.24909 6.875 1.24909ZM4.15686e-08 6.87409C0.00014581 5.77001 0.2662 4.6822 0.775658 3.70268C1.28512 2.72316 2.02299 1.88074 2.92686 1.24669C3.83074 0.612646 4.87402 0.205614 5.96847 0.0600305C7.06291 -0.0855532 8.17632 0.0345933 9.21452 0.410307C10.2527 0.786021 11.1851 1.40625 11.933 2.21853C12.6808 3.03081 13.2219 4.01124 13.5107 5.07689C13.7995 6.14255 13.8273 7.26208 13.5919 8.34078C13.3565 9.41948 12.8648 10.4256 12.1583 11.2741L16.0667 15.1824C16.1281 15.2396 16.1773 15.3086 16.2115 15.3853C16.2456 15.462 16.264 15.5447 16.2655 15.6287C16.267 15.7126 16.2515 15.7959 16.2201 15.8738C16.1887 15.9516 16.1419 16.0223 16.0825 16.0816C16.0232 16.141 15.9525 16.1878 15.8747 16.2192C15.7968 16.2506 15.7135 16.2661 15.6296 16.2646C15.5456 16.2631 15.4629 16.2447 15.3862 16.2106C15.3096 16.1764 15.2406 16.1272 15.1833 16.0658L11.275 12.1574C10.271 12.9937 9.04952 13.5265 7.7536 13.6935C6.45768 13.8605 5.14102 13.6547 3.95784 13.1003C2.77467 12.5458 1.77399 11.6657 1.07303 10.563C0.372066 9.46034 -0.000143616 8.18073 4.15686e-08 6.87409Z" fill="black"/>
+            </svg>
+        </span>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li>
+            Home
+          </li>
+          <li>
+            Recipe
+          </li>
+          <li>
+  
+              <div class="dropdown">
+                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_87_1797" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="#D9D9D9"/>
+                    </mask>
+                    <g mask="url(#mask0_87_1797)">
+                    <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="#1C1B1F"/>
+                    </g>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu px-2 py-5" style="min-width: 300px;">
+                  <li><a class="dropdown-item" href="#">. Breakfast</a></li>
+                  <li><a class="dropdown-item" href="#">. Lunch</a></li>
+                  <li><a class="dropdown-item" href="#">. Dinner</a></li>
+                  <li><a class="dropdown-item" href="#">. Desert</a></li>
+                  <li><a class="dropdown-item" href="#">. Snacks and Appetizers</a></li>
+                  <li><a class="dropdown-item" href="#">. Recipe by Ingredient</a></li>
+                  <li><a class="dropdown-item" href="#">. Recipe by Method</a></li>
+                  <li><a class="dropdown-item" href="#">. Recipe by Diet</a></li>
+                  <li><a class="dropdown-item" href="#">. Recipe by World Cuisin</a></li>
+                  <li><a class="dropdown-item" href="#">. Nigerian Cuisine</a></li>
+                  <li><a class="dropdown-item" href="#">. Easter Recipe</a></li>
+                </ul>
+              </div>
+          </li>
+          <li class="user">
+            <img src="assets/account_circle.png" class="user-icon" alt="account icon">
+          </li>
+          <li>
+            <button class="btn login" [routerLink]="['/login']" >
+              Sign up/ Log in
+            </button>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
