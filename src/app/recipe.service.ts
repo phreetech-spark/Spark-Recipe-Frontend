@@ -10,7 +10,7 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   createuser(user:any): Observable<any>{
-    return this.http.post("http://localhost:3001/add_new_user",user)
+    return this.http.post("http://localhost:3001/addnewuser",user)
   }
   addrecipe(recipe:any): Observable<any>{
     return this.http.post("http://localhost:3001/addrecipe",recipe)

@@ -115,5 +115,15 @@
       color: white;
       border-radius: 20px;
       margin-bottom: 30px;
+      outline: none;
+    }
+
+    @media screen and (max-width: 768px){
+      .cuisine-options img{
+        height: 120px;
+        width: 100%;
+      }
+
+
     }
     

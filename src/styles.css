@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body, html {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  .border-green {
+    border: 1px solid #50692380;
+  }
+  
+  .link {
+    color: #B5C18E;
+    text-decoration: none;
+  }
+  
+  .auth-section {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  
+  .auth-section input.form-control::placeholder {
+    color: #D7D7D7;
+  }
+  
+  .logo-container {
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  
+  .logo-container .logo {
+    width: 100%;
+    max-width: 160px;
+  }
+  
+  .auth-section-left {
+    width: 100%;
+    padding: 0 5vw 10vh 5vw;
+  }
+  
+  .auth-section-left-content {
+    width: 100%;
+    max-width: 530px;
+    margin-right: auto;
+  }
+  
+  .auth-section-title-container {
+    margin-bottom: 40px;
+  }
+  
+  .auth-section-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+  }
+  
+  .auth-section-right {
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  .auth-section-right img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .auth-section .form-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .auth-section .form-footer .auth-btn {
+    padding: 10px 24px;
+    width: 80%;
+    background-color: #506923;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-btn:disabled{
+    background-color: #B5C18E;
+  }
+  
+  .auth-section .terms {
+    margin-top: 30px;
+  }
+  
+  

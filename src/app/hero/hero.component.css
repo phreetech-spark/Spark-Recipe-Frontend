@@ -1,21 +1,26 @@
 .baby{
-  background-image: url('/assets/herohomepage.jpg');
+  background: url('/assets/herohomepage.jpg');
+
   width: 100%;
-  height: 250px;
-  background-color: #344319;
-}
-.boddy{
-  margin-left: 400px;
-  padding-top: 20px;
+  padding:7% 0;
+
 
 }
+.boddy{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+p{
+  margin: 10px 0;
+}
 h1{
-  margin-left:150px ;
+  font-size: 64px;
+  font-weight: 700;
 }
 .container{
   display: flex;
-  flex-direction: row;
-  margin-left: 500px;
 }
 button{
   margin-right: 10px;
@@ -28,4 +33,18 @@ button{
 .bts button{
   background-color: white;
   color: #344319;
+}
+@media screen and (max-width: 768px){
+  .boddy{
+    width: 80%;
+  }
+  h1{
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .boddy{
+    width: 90%;
+  }
 }
