@@ -1,0 +1,87 @@
+<div class="authsection">
+    <form [formGroup]="profileform">
+      <section class="firstsec">
+        <h4>Profile</h4>
+        <div class="mb-4">
+            <label for="username" class="form-label fw-medium">username</label>
+            <input type="text" class="form-control rounded-3 border-green" id="username" formControlName="username" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="about" class="form-label fw-medium">About</label>
+            <textarea type="text" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
+            <div class="form-text" id="basic-addon4">Write a few words about yourself.</div>
+          </div>
+          <div class="mb-4">
+            <label for="photo" class="form-label fw-medium">Photo</label>
+            <img src="assets/account_circle.png" alt="account_circle">
+            <input type="file" class="form-control rounded-3 border-green" id="photo" formControlName="photo">
+          </div>
+          <div class="mb-4">
+            <label for="profilephoto" class="form-label fw-medium">Profile Photo</label>
+            <input type="file" class="form-control rounded-3 border-green" id="profilephoto" formControlName="profilephoto" placeholder="">
+          </div>
+        </section>
+          <section class="secondsec">
+          <h4>Personal Information</h4>
+          <div class="mb-4">
+            <label for="firstname" class="form-label fw-medium">First Name</label>
+            <input type="text" class="form-control rounded-3 border-green" id="firstname" formControlName="firstname" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="lastname" class="form-label fw-medium">Last Name</label>
+            <input type="text" class="form-control rounded-3 border-green" id="lastname" formControlName="lastname" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label fw-medium">Email</label>
+            <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="country" class="form-label fw-medium">Country</label>
+            <input type="text" class="form-control rounded-3 border-green" id="country" formControlName="country" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="streetaddress" class="form-label fw-medium">Street Address</label>
+            <textarea type="text" class="form-control rounded-3 border-green" id="streetaddress" formControlName="streetaddress" rows="2" cols="6"></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="city" class="form-label fw-medium">City</label>
+            <input type="text" class="form-control rounded-3 border-green" id="city" formControlName="city" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="state" class="form-label fw-medium">State</label>
+            <input type="text" class="form-control rounded-3 border-green" id="state" formControlName="state" placeholder="">
+          </div>
+          <div class="mb-4">
+            <label for="phonenumber" class="form-label fw-medium">Phone Number</label>
+            <input type="text" class="form-control rounded-3 border-green" id="phonenumber" formControlName="phonenumber" placeholder="">
+          </div>
+          </section>
+        <div>
+            <h5>Notification</h5>
+            <p>We would notify you about updates and Changes, Choose what else you would like to hear</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="comments" checked>
+                <label class="form-check-label" for="flexCheckChecked">Comments<br>
+                    Get notified when someones posts a comment.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="saves">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Saves<br>
+                    Get notified when your recipes are saved.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="newrecipe">
+                <label class="form-check-label" for="flexCheckChecked">
+                    New recipe<br>
+                    Get notified when new recipes are upload by your favorite chefs.
+                </label>
+              </div>
+        </div>
+        <div class="form-footer">
+          <button type="button" (click)="submit()" class="btn auth-btn">DONE</button>
+        </div>
+    </form>
+</div>

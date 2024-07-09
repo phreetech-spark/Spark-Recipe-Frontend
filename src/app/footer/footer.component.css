@@ -51,10 +51,31 @@ input.form-control{
 }
 @media screen and (max-width: 745px){
   footer{
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 10px;
   }
-  
+  input.form-control{
+    padding: 6px;
+    border-radius: 10px;
+    width: auto;
+    
+  }
+  .footer-form {
+    gap: 6px;
+  }
+  .footer-form-button{
+    padding: 6px;
+    width: auto;
+    
+  }
+  .social-links{
+    gap: 10px;
+  }
+  .links{
+    gap: 10px;
+  }
+  .footer-heading{
+    font-size: 14px;
+  }
 
 }

@@ -14,6 +14,8 @@ import { ProfileEditrecipeComponent } from './profile-editrecipe/profile-editrec
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { AddrecipeComponent } from './addrecipe/addrecipe.component';
+import { AccountManagementComponent } from './account-management/account-management.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 export const routes: Routes = [
    {path:'signup',
@@ -66,6 +68,14 @@ export const routes: Routes = [
     {
         path:'addrecipe',
         component:AddrecipeComponent
+    },
+    {
+        path:'accountmanagement',
+        component:AccountManagementComponent
+    },
+    {
+        path:'profile-edit',
+        component:ProfileEditComponent
     },
     {
         path:'',

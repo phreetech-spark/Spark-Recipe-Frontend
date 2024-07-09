@@ -1,18 +1,4 @@
-<header class="header">
-    <div class="logo">
-      Recipe Hub
-    </div>
-    <div class="search">
-      <input type="text" class="search-input" placeholder="Search">
-      <button>Search</button>
-    </div>
-    <div class="nav-link">
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">Recipes</a>
-      <a href="#" class="nav-link">More</a>
-      <p><a routerLink="/signup">Sign up</a>/<a routerLink="/login"> Log in</a></p>
-    </div>
-  </header>
+
   
   <app-hero></app-hero>
   
@@ -36,11 +22,11 @@
               <h3>Irish</h3>
               <img src="assets/vadim-markin.jpg" alt="Irish dish">
             </div>
-            <div class="option">
+            <div class="option hide-img-only">
               <h3>Brazillian</h3>
               <img src="assets/hand-white.jpg" alt="Brazillian dish">
             </div>
-            <div class="option">
+            <div class="option hide-img-only">
               <h3>Nigerian</h3>
               <img src="assets/Nigerian jollof.jpg" alt="Nigerian dish">
             </div>
@@ -49,7 +35,7 @@
       </section>
   
       <section class="recipes">
-        <img src="assets/ricetrending.jpg">
+        <img class="leftimg" src="assets/ricetrending.jpg">
         <div class="container">
           <h2>TRENDING RECIPES</h2>
           <div class="recipe-cards">
@@ -101,5 +87,4 @@
           </div>
         </div>
       </section>
-     <app-footer></app-footer>
   

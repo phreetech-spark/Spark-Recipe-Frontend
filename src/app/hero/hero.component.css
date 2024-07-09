@@ -59,16 +59,26 @@
   background-color: #ffffff;
 }
 @media screen and (max-width: 768px){
-  .boddy{
-    width: 80%;
-  }
-  h1{
-    font-size: 36px;
-  }
+  
+.hero {
+    background-color: #86a873;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 30px;
 }
-
-@media screen and (max-width: 500px){
-  .boddy{
-    width: 90%;
-  }
+.hero h1 {
+    margin-bottom: 20px;
+}
+.hero p {
+    margin-bottom: 30px;
+}
+.button {
+    background-color: white;
+    color: #86a873;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
 }

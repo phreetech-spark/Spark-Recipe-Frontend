@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { UpperCasePipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +11,15 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   createuser(user:any): Observable<any>{
-    return this.http.post("http://localhost:3001/addnewuser",user)
-  }
-  addrecipe(recipe:any): Observable<any>{
-    return this.http.post("http://localhost:3001/addrecipe",recipe)
+    return this.http.post("https://spark-recipe.vercel.app/addnewuser",user)
   }
   login(login:any):Observable<any>{
-    return this.http.post("http://localhost:3001/userlogin",login)
+    return this.http.post("https://spark-recipe.vercel.app/userlogin",login)
+  }
+  addrecipe(recipe:any): Observable<any>{
+    return this.http.post("https://spark-recipe.vercel.app/recipe",recipe)
+  }
+  updateprofile(profile:any):Observable<any>{
+    return this.http.post("https://spark-recipe.vercel.app/adduserinformation",profile)
   }
 }
