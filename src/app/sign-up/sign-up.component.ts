@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 import { RecipeService } from '../recipe.service';
 @Component({
@@ -14,15 +14,15 @@ import { RecipeService } from '../recipe.service';
 export class SignUpComponent implements OnInit{
   signupform:FormGroup;
 
-  constructor(private fb: FormBuilder,private service:RecipeService) {
+  constructor(private fb: FormBuilder,private service:RecipeService,private router:Router) {
     this.signupform = this.fb.group({
       fullname: ['', Validators.required,
       ],
       email: ['', Validators.email] ,
       password: ['', Validators.required] ,
       confirm_password: ['', Validators.required],
-      nationality: ['', Validators.required],
-      city: ['', Validators.required],
+      country: ['', Validators.required],
+      state: ['', Validators.required],
     })
   }
   ngOnInit():void{}
@@ -30,8 +30,9 @@ export class SignUpComponent implements OnInit{
     if (this.signupform.valid){
       console.log("valid")
       this.service.createuser(this.signupform.value).subscribe({
-        next(value) {
+        next:(value)=> {
           console.log(value)
+        this.router.navigate(["/confirmemail"])
         },
         error(err) {
           console.log(err)

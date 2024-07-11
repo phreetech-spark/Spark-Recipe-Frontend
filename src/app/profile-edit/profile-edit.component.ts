@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule,FormBuilder, FormGroup, } from '@angular/forms';
 import { RouterModule,  } from '@angular/router';
 import { RecipeService } from '../recipe.service';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 
 @Component({
   selector: 'app-profile-edit',
   standalone: true,
-  imports: [RouterModule,ReactiveFormsModule],
+  imports: [RouterModule,ReactiveFormsModule,NavBarComponent],
   templateUrl: './profile-edit.component.html',
   styleUrl: './profile-edit.component.css'
 })
@@ -19,8 +20,7 @@ constructor(private fb: FormBuilder,private service:RecipeService){
     about:[],
     photo:[],
     profilephoto:[],
-    firstname:[],
-    lastname:[],
+    fullname:[],
     email:[],
     country:[],
     streetaddress:[],

@@ -20,7 +20,6 @@ import { BreakfastsearchComponent } from './breakfastsearch/breakfastsearch.comp
 import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { TipsandtechniqueComponent } from './tipsandtechnique/tipsandtechnique.component';
 import { QuickandeasyComponent } from './quickandeasy/quickandeasy.component';
-import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { ErrorComponent } from './error/error.component';
 
 NgModule({
@@ -37,7 +36,6 @@ NgModule({
     AddrecipeComponent,
     TipsandtechniqueComponent,
     QuickandeasyComponent,
-    ConfirmationComponent,
     ErrorComponent,
   ],
   imports: [

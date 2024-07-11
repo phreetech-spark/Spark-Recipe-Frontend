@@ -1,3 +1,5 @@
+<app-nav-bar></app-nav-bar>
+
 <div class="authsection">
     <form [formGroup]="profileform">
       <section class="firstsec">
@@ -8,8 +10,10 @@
           </div>
           <div class="mb-4">
             <label for="about" class="form-label fw-medium">About</label>
-            <textarea type="text" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
-            <div class="form-text" id="basic-addon4">Write a few words about yourself.</div>
+            <div class="abeg">
+              <textarea type="text" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
+            <p class="form-text" id="basic-addon4">Write a few words about yourself.</p>
+            </div>
           </div>
           <div class="mb-4">
             <label for="photo" class="form-label fw-medium">Photo</label>
@@ -24,12 +28,8 @@
           <section class="secondsec">
           <h4>Personal Information</h4>
           <div class="mb-4">
-            <label for="firstname" class="form-label fw-medium">First Name</label>
-            <input type="text" class="form-control rounded-3 border-green" id="firstname" formControlName="firstname" placeholder="">
-          </div>
-          <div class="mb-4">
-            <label for="lastname" class="form-label fw-medium">Last Name</label>
-            <input type="text" class="form-control rounded-3 border-green" id="lastname" formControlName="lastname" placeholder="">
+            <label for="firstname" class="form-label fw-medium">Full Name</label>
+            <input type="text" class="form-control rounded-3 border-green" id="fullname" formControlName="fulltname" placeholder="">
           </div>
           <div class="mb-4">
             <label for="email" class="form-label fw-medium">Email</label>
@@ -81,7 +81,10 @@
               </div>
         </div>
         <div class="form-footer">
-          <button type="button" (click)="submit()" class="btn auth-btn">DONE</button>
+          <button type="button" (click)="submit()" class="btn auth-btn">Save</button>
+          <div class="xtrabtn">
+          <button type="button" class="btn auth-btn">Cancel</button>
+        </div>
         </div>
     </form>
 </div>

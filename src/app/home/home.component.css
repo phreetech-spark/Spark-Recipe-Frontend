@@ -68,4 +68,48 @@
     border-radius: 20px;
     margin-bottom: 30px;
   }
+
+  @media screen and (max-width: 768px){
+    
+    .cuisine h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .cuisine-options option {
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+      padding: 10px;
+    }
+    .cuisine-options option h3{
+      font-size: 23px;
+
+    }
+    .cuisine-options img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 100%;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .hide-img-only{
+      display: none;
+    }
+    .recipes{
+      grid-template-columns: 100%;
+    }
+    .leftimg{
+      display: none;
+    }
+    .recipes{
+      margin-left: 40px;
+    }
+    .about{
+      margin-left: 0;
+    }
+  }
   

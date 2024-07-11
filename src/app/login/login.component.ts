@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 import { RecipeService } from '../recipe.service';
 
@@ -13,7 +13,7 @@ import { RecipeService } from '../recipe.service';
 })
 export class LoginComponent {
   loginform:FormGroup;
-  constructor(private fb: FormBuilder, private service:RecipeService){this.loginform = this.fb.group({
+  constructor(private fb: FormBuilder, private service:RecipeService, private router:Router){this.loginform = this.fb.group({
     email: ['',Validators.email],
     password: ['',Validators.required],})}
 
@@ -21,8 +21,9 @@ export class LoginComponent {
       if (this.loginform.valid){
         console.log("valid")
         this.service.login(this.loginform.value).subscribe({
-          next(value) {
+          next:(value)=> {
             console.log(value)  
+            this.router.navigate(["/home"])
           },
           error(err) {
             console.log(err)

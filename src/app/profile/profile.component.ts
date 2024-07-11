@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { HeroComponent } from '../hero/hero.component';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [FooterComponent,HeaderComponent,],
+  imports: [FooterComponent,HeaderComponent,NavBarComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })

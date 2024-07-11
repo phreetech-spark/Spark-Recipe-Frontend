@@ -2,3 +2,31 @@ img{
     height: 40px;
     width: 40px;
 }
+.form-footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.authsection{
+    padding-left: 170px;
+    padding-top: 50px;
+}
+input{
+    max-width: 600px;
+    margin-right: 100px;
+}
+input[type="text"]{
+    margin-left: 40px;
+}
+textarea{
+    max-width: 450px;
+    margin-left: 100px;
+}
+.mb-4{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+label{
+    margin-right: 150px;
+}

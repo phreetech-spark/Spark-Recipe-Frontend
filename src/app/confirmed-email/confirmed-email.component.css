@@ -1,0 +1,14 @@
+.festsec{
+    text-align: center;
+    padding-bottom: 30px;
+}
+p{
+    color: gray;
+}
+button{
+    background-color: #B5C18E;
+    color: black;
+    border-radius: 20px;
+    padding: 7px;
+    width: 140px;
+}
