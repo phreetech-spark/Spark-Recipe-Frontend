@@ -17,6 +17,7 @@ import { AccountManagementComponent } from './account-management/account-managem
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 import { ConfirmemailComponent } from './confirmemail/confirmemail.component';
 import { ConfirmedEmailComponent } from './confirmed-email/confirmed-email.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 export const routes: Routes = [
    {path:'signup',
@@ -81,6 +82,10 @@ export const routes: Routes = [
     {
         path:'confirmed-email',
         component:ConfirmedEmailComponent
+    },
+    {
+        path:'resetpassword',
+        component:ResetpasswordComponent
     },
     {
         path:'',
