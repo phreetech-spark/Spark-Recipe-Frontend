@@ -26,11 +26,16 @@ button{
 }
 @media screen and (max-width: 768px) {
  .cmail{
-    margin-left: 180px;
-    margin-top: 70px;
-    margin-bottom: 40px;
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 30px;
  }   
  button{
-    width: auto;
+    width: 150px;
  }
+ .second{
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 40px;
+}
 }
