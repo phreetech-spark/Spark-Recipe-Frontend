@@ -115,13 +115,13 @@ button{
 
 @media screen and (max-width:768px){
   .mainsection-top img {
-    width: 100px;
-    height: 120px;
+    width: 80px;
+    height: 100px;
 }
 .mainsection-top{
-  margin-bottom: 45px;
-  padding-left: 10px;
-  padding-top: 49px;
+  margin-bottom: 35px;
+  padding-left: 5px;
+  padding-top: 39px;
 } 
 .wordify h3{
   font-size: 16px;
@@ -137,7 +137,7 @@ button{
   margin: 8px;
 }
 .mainsection-bot{
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .mainsection-bot img{
   height:73px ;

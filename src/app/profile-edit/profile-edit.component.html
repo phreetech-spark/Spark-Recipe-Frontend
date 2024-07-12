@@ -4,56 +4,52 @@
     <form [formGroup]="profileform">
       <section class="firstsec">
         <h4>Profile</h4>
-        <div class="mb-4">
+        <div class="mb-4 username">
             <label for="username" class="form-label fw-medium">username</label>
-            <input type="text" class="form-control rounded-3 border-green" id="username" formControlName="username" placeholder="">
+            <input type="username" class="form-control rounded-3 border-green" id="username" formControlName="username" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 about">
             <label for="about" class="form-label fw-medium">About</label>
             <div class="abeg">
-              <textarea type="text" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
+              <textarea type="about" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
             <p class="form-text" id="basic-addon4">Write a few words about yourself.</p>
             </div>
           </div>
-          <div class="mb-4">
+          <div class="mb-4 photo">
             <label for="photo" class="form-label fw-medium">Photo</label>
             <img src="assets/account_circle.png" alt="account_circle">
-            <input type="file" class="form-control rounded-3 border-green" id="photo" formControlName="photo">
+            <input type="file" class="form-control rounded-3 border-green" id="photo" formControlName="photo" placeholder="change">
           </div>
-          <!-- <div class="mb-4">
-            <label for="profilephoto" class="form-label fw-medium">Profile Photo</label>
-            <input type="file" class="form-control rounded-3 border-green" id="profilephoto" formControlName="profilephoto" placeholder="">
-          </div> -->
         </section>
           <section class="secondsec">
           <h4>Personal Information</h4>
-          <div class="mb-4">
-            <label for="firstname" class="form-label fw-medium">Full Name</label>
-            <input type="text" class="form-control rounded-3 border-green" id="fullname" formControlName="fulltname" placeholder="">
+          <div class="mb-4 fullname">
+            <label for="fullname" class="form-label fw-medium">Full Name</label>
+            <input type="fullname" class="form-control rounded-3 border-green" id="fullname" formControlName="fulltname" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 email">
             <label for="email" class="form-label fw-medium">Email</label>
             <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 country">
             <label for="country" class="form-label fw-medium">Country</label>
-            <input type="text" class="form-control rounded-3 border-green" id="country" formControlName="country" placeholder="">
+            <input type="country" class="form-control rounded-3 border-green" id="country" formControlName="country" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 address">
             <label for="streetaddress" class="form-label fw-medium">Street Address</label>
-            <textarea type="text" class="form-control rounded-3 border-green" id="streetaddress" formControlName="streetaddress" rows="2" cols="6"></textarea>
+            <textarea type="address" class="form-control rounded-3 border-green" id="streetaddress" formControlName="streetaddress" rows="2" cols="6"></textarea>
           </div>
-          <div class="mb-4">
+          <div class="mb-4 city">
             <label for="city" class="form-label fw-medium">City</label>
-            <input type="text" class="form-control rounded-3 border-green" id="city" formControlName="city" placeholder="">
+            <input type="city" class="form-control rounded-3 border-green" id="city" formControlName="city" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 state">
             <label for="state" class="form-label fw-medium">State</label>
             <input type="text" class="form-control rounded-3 border-green" id="state" formControlName="state" placeholder="">
           </div>
-          <div class="mb-4">
+          <div class="mb-4 number">
             <label for="phonenumber" class="form-label fw-medium">Phone Number</label>
-            <input type="text" class="form-control rounded-3 border-green" id="phonenumber" formControlName="phonenumber" placeholder="">
+            <input type="number" class="form-control rounded-3 border-green" id="phonenumber" formControlName="phonenumber" placeholder="">
           </div>
           </section>
         <div>
