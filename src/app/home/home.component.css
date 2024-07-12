@@ -71,25 +71,23 @@
 
   @media screen and (max-width: 768px){
     .cuisine h2 {
-      font-size: 28px;
+      font-size: 18px;
       font-weight: bold;
       margin-bottom: 15px;
     }
+    .cuisine h3 {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
     .cuisine-options option {
-      width: 100px;
+      width: 80px;
       margin: 10px;
-      text-align: center;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
       padding: 10px;
     }
-    .cuisine-options option h3{
-      font-size: 23px;
-
-    }
     .cuisine-options img {
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       object-fit: cover;
       border-radius: 100%;
       display: inline-block;
