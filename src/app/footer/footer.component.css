@@ -49,35 +49,23 @@ input.form-control{
   font-weight: 700;
   font-size: 18px;
 }
-@media screen and (max-width: 745px){
-  /* footer{
-    padding-top: 25px;
-    padding-bottom: 10px;
+@media screen and (max-width: 767px){
+  .footer-container{
+    display: none;
   }
-  input.form-control{
-    padding: 6px;
-    border-radius: 10px;
-    max-width: auto;
-    
+}
+@media screen and (min-width: 768px){
+  .mobile-footer{
+    display: none;
   }
-  .footer-form {
-    gap: 6px;
-  }
+}
+@media screen and (max-width: 500px){
   .footer-form-button{
-    padding: 6px;
-    width: auto;
-    
+    width: 100%;
   }
-  .social-links{
-    gap: 10px;
-  }
-  .links{
-    gap: 10px;
-  }
-  .footer-heading{
-    font-size: 14px;
-  } */
-  .footer-heading{
-    font-size: 15px;
+}
+@media screen and (min-width:500px){
+  .mobile-footer-content{
+    display: flex;
   }
 }
