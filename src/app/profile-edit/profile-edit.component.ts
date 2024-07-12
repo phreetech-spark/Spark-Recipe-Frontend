@@ -18,7 +18,6 @@ constructor(private fb: FormBuilder,private service:RecipeService){
   this.profileform=this.fb.group({
     username:[],
     about:[],
-    photo:[],
     profilephoto:[],
     fullname:[],
     email:[],
