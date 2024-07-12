@@ -10,8 +10,8 @@
             </svg>
         </span>
       </div>
-      <div>
-        <ul class="nav-links">
+      <div class="d-flex">
+        <ul class="nav-links menu">
           <li  routerLink="/home">
             Home
           </li>
@@ -46,14 +46,17 @@
                 </ul>
               </div>
           </li>
-          <li class="user">
+          
+        </ul>
+        <ul class="nav-links">
+          <!-- <li class="user">
             <img src="assets/account_circle.png" class="user-icon" alt="account icon" routerLink="/profile">
-          </li>
-          <!-- <li>
+          </li> -->
+          <li>
             <button class="btn login" [routerLink]="['/login']" >
               Sign up/ Log in
             </button>
-          </li> -->
+          </li>
         </ul>
       </div>
       </div>

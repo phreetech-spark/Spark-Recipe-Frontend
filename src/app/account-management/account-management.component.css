@@ -16,8 +16,10 @@ h1 {
     text-align: center;
 }
 .settings-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .settings-item {

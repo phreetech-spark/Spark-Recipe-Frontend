@@ -60,25 +60,18 @@
 }
 @media screen and (max-width: 768px){
   
-.hero {
-    background-color: #86a873;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-    margin-bottom: 30px;
+.hero-title {
+  font-size: 24px;
+  text-align: center;
 }
-.hero h1 {
-    margin-bottom: 20px;
+.hero-text {
+  font-size: 14px;
+  line-height: 20px;
 }
-.hero p {
-    margin-bottom: 30px;
+.hero-buttons .btn {
+  padding: 8px 28px;
+  font-size: 18px;
+  margin-right: 10px;
 }
-.button {
-    background-color: white;
-    color: #86a873;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-}
+
 }

@@ -50,14 +50,14 @@ input.form-control{
   font-size: 18px;
 }
 @media screen and (max-width: 745px){
-  footer{
+  /* footer{
     padding-top: 25px;
     padding-bottom: 10px;
   }
   input.form-control{
     padding: 6px;
     border-radius: 10px;
-    max-width: 130px;
+    max-width: auto;
     
   }
   .footer-form {
@@ -76,6 +76,8 @@ input.form-control{
   }
   .footer-heading{
     font-size: 14px;
+  } */
+  .footer-heading{
+    font-size: 15px;
   }
-
 }

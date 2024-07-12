@@ -8,7 +8,7 @@
   }
   
   .nav-input-container {
-    width: 100%;
+    
     max-width: 500px;
     position: relative;
   }
@@ -66,4 +66,26 @@
   border-radius: 10px;
   background-color: #B5C18E;
   }
-  
+  @media screen  and (max-width:768px){
+    .menu{
+      display: none;
+    }
+    .navbar-content {
+      min-height: 60px;
+      gap: 10px;
+    }
+    .navbar-container .logo {
+      max-width: 90px;
+    }
+    .login {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 5px;
+      }
+    .nav-input {
+        min-height: 40px;
+        padding: 7px 14.73px 7px 15px;
+        border-radius: 30px;
+        width: 100%;
+      }
+  }
