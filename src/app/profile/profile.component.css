@@ -1,76 +1,22 @@
-.hamburger-menu {
-    position: relative;
-  }
-  
-  .hamburger-icon {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .menu-container {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    display: none;
-    width: 200px;
-  }
-  
-  .menu-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-container li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .menu-container li:last-child {
-    border-bottom: none;
-  }
-  
-  .menu-container a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
-  
-  .arrow {
-    margin-left: auto;
-  }
-  
-  .logout {
-    display: block;
-    padding: 10px 15px;
-    color: red;
-    text-decoration: none;
-    border-top: 1px solid #eee;
-  }
-  
-  /* Show menu when hamburger is clicked (you'll need JavaScript for this) */
-  .hamburger-menu.active .menu-container {
-    display: block;
-  }
-button{
+.btn-group{
+  background-color: white;
+  margin-left: 1450px;
+}
+ button{
     border-radius: 40px;
     padding: 14px;
     background-color:#B5C18E ;
     color: white;
     width: 406px;
     margin: 10px;
-
+}
+ button{
+  border-radius: 40px;
+  padding: 14px;
+  background-color:#B5C18E ;
+  color: white;
+  width: 406px;
+  margin: 10px;
 }
 .mainsection-bot{
     display: flex;
@@ -107,7 +53,7 @@ button{
     width: 200px;
     margin: 20px;
 }
-.blueb{
+.blueb {
     background-color: white;
     color: black;
 }
@@ -154,6 +100,10 @@ button{
   width: 100px;
   margin: 8px;
   font-size: 12px;
+}
+.btn-group{
+  background-color: white;
+  margin-left: 450px;
 }
 
 
