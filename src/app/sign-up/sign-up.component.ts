@@ -22,7 +22,7 @@ export class SignUpComponent implements OnInit{
       password: ['', Validators.required] ,
       confirm_password: ['', Validators.required],
       country: ['', Validators.required],
-      state: ['', Validators.required],
+      city: ['', Validators.required],
     })
   }
   ngOnInit():void{}
