@@ -74,4 +74,83 @@ h4{
     background-color: white;
     border: #B5C18E;
 }
+
+
+@media screen and (max-width:768px){
+    .authsection{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .firstsec input{
+        width: 60%;
+    }
+    .secondsec input{
+        width: 60%;
+    }
+    .username input{
+        margin-left: 50px;
+    }
+    .about textarea{
+        width: 70%;
+        margin-left: 80px;
+    }
+    .abeg p{
+        margin-left: 80px;
+    }
+    .photo input{
+        width: 170px;
+    }
+    .photo img{
+        height: 20px;
+        width: 20px;
+        margin-left: 80px;
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+    .fullname input{
+        margin-left: 60px;
+        width: 58%;
+    }
+    .email input{
+        margin-left: 90px;
+        width: 59%;
+    }
+    .country input{
+        margin-left: 70px;
+        width: 59%;
+    }
+    .address textarea{
+        margin-left: 30px;
+        width: 55%;
+    }
+    .city input{
+        margin-left: 100px;
+        width: 59%;
+    }
+    .state input{
+        margin-left: 90px;
+        width: 59%;
+    }
+    .number input{
+        margin-left: 30px;
+        width: 58.5%;
+    }
+    .form-footer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+    }
+    h4 h5{
+        font-size: 16px;
+    }
+    label{
+        font-size: 14px;
+    }
+    p{
+        font-size: 10px;
+    }
+   
+
+}
  

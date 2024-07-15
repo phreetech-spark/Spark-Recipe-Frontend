@@ -23,6 +23,7 @@ h1 {
     gap: 20px;
 }
 .settings-item {
+    width: 30%;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -31,4 +32,11 @@ h1 {
     background-color:#B5C18E ;
     padding: 20px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+   
+.settings-item {
+    width: 45%;
+} 
 }

@@ -1,112 +1,112 @@
 .cuisine {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .cuisine h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .cuisine-options {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .cuisine-options option {
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
-    padding: 15px;
-  }
-  
-  .cuisine-options img {
-    width: 162px;
-    height: 171px;
-    object-fit: cover;
-    border-radius: 100%;
-    display: inline-block;
-    margin-right: 15px;
-  }
-  .recipes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .recipes img{
-    width: 500px;
-    height: 600px;
-    margin-left: 200px;
-  }
-  
-  .card{
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-  
-  .card img{
-    height: 160px;
-    width:160px ;
-    margin-bottom: 15px;
-    margin-right: 10px;
-  }
-  .about{
-    margin-left: 200px;
-  }
-  .about button{
-    width: 40%;
-    padding: 10px;
-    background-color: #B5C18E;
-    color: white;
-    border-radius: 20px;
-    margin-bottom: 30px;
-  }
+  padding: 50px 0;
+  text-align: center;
+}
 
-  @media screen and (max-width: 768px){
-    .cuisine h2 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .cuisine h3 {
-      font-size: 15px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .cuisine-options option {
-      width: 80px;
-      margin: 10px;
-      padding: 10px;
-    }
-    .cuisine-options img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 100%;
-      display: inline-block;
-      margin-right: 15px;
-    }
-    .hide-img-only{
-      display: none;
-    }
-    .recipes{
-      grid-template-columns: 100%;
-    }
-    .leftimg{
-      display: none;
-    }
-    .recipes{
-      margin-left: 40px;
-    }
-    .about{
-      margin-left: 0;
-    }
-  }
+.cuisine h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.cuisine-options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cuisine-options option {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+  padding: 15px;
+}
+
+.cuisine-options img {
+  width: 162px;
+  height: 171px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 15px;
+}
+.recipes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.leftimg{
+  width: 60%;
+  height: 750px;
+  margin-left: 200px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
   
+}
+
+
+.card img{
+  height: 160px;
+  width:160px ;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.about{
+  margin-left: 200px;
+}
+.about button{
+  width: 40%;
+  padding: 10px;
+  background-color: #B5C18E;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+@media screen and (max-width: 768px){
+.cuisine h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.cuisine h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cuisine-options option {
+  width: 80px;
+  margin: 10px;
+  padding: 10px;
+}
+.cuisine-options img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 15px;
+}
+.hide-img-only{
+  display: none;
+}
+.recipes{
+  grid-template-columns: 100%;
+}
+.leftimg{
+  display: none;
+}
+.recipes{
+  margin-left: 40px;
+}
+.about{
+  margin-left: 0;
+}
+}
