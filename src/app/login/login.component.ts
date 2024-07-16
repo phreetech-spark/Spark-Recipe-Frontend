@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 import { RecipeService } from '../recipe.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +13,11 @@ import { RecipeService } from '../recipe.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  @ViewChild("modalcontent")modalcontent?:TemplateRef<any>
   loginform:FormGroup;
-  constructor(private fb: FormBuilder, private service:RecipeService, private router:Router){this.loginform = this.fb.group({
+
+  constructor(private fb: FormBuilder, private service:RecipeService, private router:Router, private modalService:NgbModal){
+    this.loginform = this.fb.group({
     email: ['',Validators.email],
     password: ['',Validators.required],})}
 
@@ -23,10 +27,16 @@ export class LoginComponent {
         this.service.login(this.loginform.value).subscribe({
           next:(value)=> {
             console.log(value)  
-            this.router.navigate(["/home"])
+            const user=value.data
+            if (user){
+              localStorage.setItem("loggedinuser",JSON.stringify(user))
+              this.router.navigate(["/home"])
+            }
+            
           },
-          error(err) {
+          error:(err)=> {
             console.log(err)
+            this.openSm()
           },
         })
       
@@ -34,6 +44,12 @@ export class LoginComponent {
     else{
       console.log("invalid")
     }
-    }}
+
+ 
+  }
+  openSm() {
+    this.modalService.open(this.modalcontent, { size: 'sm' });
+  }
+}
   
     

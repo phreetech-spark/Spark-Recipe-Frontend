@@ -2,6 +2,10 @@
     width: 24px;
     height: 24px;
 }
+.modal-body{
+    background-color: white;
+    color: red;
+  }
 
 @media screen and (max-width: 745px){
     .auth-section-right{

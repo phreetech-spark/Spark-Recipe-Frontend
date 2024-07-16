@@ -1,6 +1,7 @@
 .btn-group{
-  background-color: white;
-  margin-left: 1450px;
+  position: absolute;
+  top: 100px;
+  right: 46px;
 }
  button{
     border-radius: 40px;

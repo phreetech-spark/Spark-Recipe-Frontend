@@ -74,6 +74,31 @@ h4{
     background-color: white;
     border: #B5C18E;
 }
+.modal-body{
+    position: relative;
+    text-align: center;
+  }
+  .modal-header img{
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom button{
+    background-color: #B5C18E;
+    color: black;
+    border-radius: 20px;
+    padding: 7px;
+    width: 100px;
+  }
+  .modal-header button{
+    background-color: white;
+    border-color: white;
+    width: 10px;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
 
 
 @media screen and (max-width:768px){

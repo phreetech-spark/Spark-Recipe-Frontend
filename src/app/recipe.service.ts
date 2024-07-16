@@ -20,6 +20,12 @@ export class RecipeService {
     return this.http.post("https://spark-recipe.vercel.app/recipe",recipe)
   }
   updateprofile(profile:any):Observable<any>{
-    return this.http.post("https://spark-recipe.vercel.app/adduserinformation",profile)
+    return this.http.post("https://spark-recipe.vercel.app/updateUser",profile)
+  }
+  forgotpassword(forgotpassword:any):Observable<any>{
+    return this.http.post("https://spark-recipe.vercel.app/forgotpassword",forgotpassword)
+  }
+  resetpassword(resetpassword:any):Observable<any>{
+    return this.http.post("https://spark-recipe.vercel.app/resetpassword",resetpassword)
   }
 }

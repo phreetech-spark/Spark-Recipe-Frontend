@@ -49,10 +49,10 @@
           
         </ul>
         <ul class="nav-links">
-          <!-- <li class="user">
+          <li class="user" *ngIf="isLoggedIn">
             <img src="assets/account_circle.png" class="user-icon" alt="account icon" routerLink="/profile">
-          </li> -->
-          <li>
+          </li>
+          <li *ngIf="!isLoggedIn">
             <button class="btn login" [routerLink]="['/login']" >
               Sign up/ Log in
             </button>

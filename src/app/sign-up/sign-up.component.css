@@ -6,6 +6,10 @@
     background-color: #45522C80;
     opacity: 0.8;
   }
+  .modal-body{
+    background-color: white;
+    color: red;
+  }
 
   @media screen and (max-width: 745px){
     .auth-section-right{
