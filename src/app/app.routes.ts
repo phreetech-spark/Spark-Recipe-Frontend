@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { BreakfastsearchComponent } from './breakfastsearch/breakfastsearch.component';
-import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { TipsandtechniqueComponent } from './tipsandtechnique/tipsandtechnique.component';
@@ -14,6 +13,11 @@ import { ProfileEditrecipeComponent } from './profile-editrecipe/profile-editrec
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { AddrecipeComponent } from './addrecipe/addrecipe.component';
+import { AccountManagementComponent } from './account-management/account-management.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
+import { ConfirmemailComponent } from './confirmemail/confirmemail.component';
+import { ConfirmedEmailComponent } from './confirmed-email/confirmed-email.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 export const routes: Routes = [
    {path:'signup',
@@ -26,10 +30,6 @@ export const routes: Routes = [
     {
         path:'breakfastsearch',
         component:BreakfastsearchComponent
-    },
-    {
-        path:'confirmation',
-        component:ConfirmationComponent
     },
     {
         path:'error',
@@ -66,6 +66,26 @@ export const routes: Routes = [
     {
         path:'addrecipe',
         component:AddrecipeComponent
+    },
+    {
+        path:'accountmanagement',
+        component:AccountManagementComponent
+    },
+    {
+        path:'profile-edit',
+        component:ProfileEditComponent
+    },
+    {
+        path:'confirmemail',
+        component:ConfirmemailComponent
+    },
+    {
+        path:'confirmed-email',
+        component:ConfirmedEmailComponent
+    },
+    {
+        path:'resetpassword',
+        component:ResetpasswordComponent
     },
     {
         path:'',

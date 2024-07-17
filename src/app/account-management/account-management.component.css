@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+h1 {
+    text-align: center;
+}
+.settings-grid {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.settings-item {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.settings-icon {
+    background-color:#B5C18E ;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px){
+   
+.settings-item {
+    width: 45%;
+} 
+}

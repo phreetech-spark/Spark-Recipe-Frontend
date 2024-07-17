@@ -3,7 +3,7 @@
             <form [formGroup]="addrecipe">
                 <div class="time">
                 <div class="onetime">
-                    <h2>RECIPE DATA</h2>
+                    <h3>RECIPE DATA</h3>
                  <div class="formadd">
                     <label for="title">Title</label>
                     <input type="text" class="formcontrol" id="title" formControlName="title" placeholder="">
@@ -14,7 +14,7 @@
                   </div>
                   <div class="formadd">
                     <label for="image">Image</label>
-                    <input type="" class="formcontrol" id="image" formControlName="image" placeholder="Add image">
+                    <input type="image" class="formcontrol" id="image" formControlName="image" placeholder="Add image">
                   </div>
                   <div class="formadd">
                     <label for="text">Publisher</label>
@@ -32,16 +32,17 @@
                 <div class="twotime">
                     <div class="formadd">
                         <label for="text">INGREDIENTS</label><br>
-                        <input type="text" class="formcontrol" id="ingredients" formControlName="ingredients" placeholder="">
+                        <textarea cols="30" rows="10" type="text" class="formcontrol" id="ingredients" formControlName="ingredients"></textarea>
                       </div>
                 </div>
             </div>
             <div class="thirdtime">
                 <div class="formadd">
                     <label for="text">INSTRUCTIONS</label><br>
-                    <input type="text" class="formcontrol" id="instructions" formControlName="instructions" placeholder="">
+                    <textarea cols="30" rows="10" type="text" class="formcontrol" id="instructions" formControlName="instructions"></textarea>
                   </div>
             </div>
-            <button type="button" (click)="submit()" class="">Upload</button>
+            <div class="me">
+            <button type="button" (click)="submit()" class="">Upload</button></div>
             </form>
-        </div>
+</div>

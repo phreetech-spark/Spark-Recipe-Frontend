@@ -1,0 +1,101 @@
+
+
+<div class="authsection">
+    <form [formGroup]="profileform">
+      <section class="firstsec">
+        <h4>Profile</h4>
+        <div class="mb-4 username">
+            <label for="username" class="form-label fw-medium">username</label>
+            <input type="username" class="form-control rounded-3 border-green" id="user_name" formControlName="user_name" placeholder="">
+          </div>
+          <div class="mb-4 about">
+            <label for="about" class="form-label fw-medium">About</label>
+            <div class="abeg">
+              <textarea type="about" class="form-control rounded-3 border-green" id="about_user" formControlName="about_user" rows="4" cols="6"></textarea>
+            <p class="form-text" id="basic-addon4">Write a few words about yourself.</p>
+            </div>
+          </div>
+          <div class="mb-4 photo">
+            <label for="photo" class="form-label fw-medium">Photo</label>
+            <img src="assets/account_circle.png" alt="account_circle">
+            <input type="file" class="form-control rounded-3 border-green" id="photo" formControlName="profilephoto" placeholder="change">
+          </div>
+        </section>
+          <section class="secondsec">
+          <h4>Personal Information</h4>
+          <div class="mb-4 fullname">
+            <label for="fullname" class="form-label fw-medium">Full Name</label>
+            <input type="fullname" class="form-control rounded-3 border-green" id="full_name" formControlName="full_name" placeholder="">
+          </div>
+          <div class="mb-4 email">
+            <label for="email" class="form-label fw-medium">Email</label>
+            <input type="email" class="form-control rounded-3 border-green" id="email_address" formControlName="email_address" placeholder="">
+          </div>
+          <div class="mb-4 country">
+            <label for="country" class="form-label fw-medium">Country</label>
+            <input type="country" class="form-control rounded-3 border-green" id="country" formControlName="country" placeholder="">
+          </div>
+          <div class="mb-4 address">
+            <label for="streetaddress" class="form-label fw-medium">Street Address</label>
+            <textarea type="address" class="form-control rounded-3 border-green" id="street_address" formControlName="street_address" rows="2" cols="6"></textarea>
+          </div>
+          <div class="mb-4 city">
+            <label for="city" class="form-label fw-medium">City</label>
+            <input type="city" class="form-control rounded-3 border-green" id="city" formControlName="city" placeholder="">
+          </div>
+          <div class="mb-4 state">
+            <label for="state" class="form-label fw-medium">State</label>
+            <input type="text" class="form-control rounded-3 border-green" id="state" formControlName="state" placeholder="">
+          </div>
+          <div class="mb-4 number">
+            <label for="phonenumber" class="form-label fw-medium">Phone Number</label>
+            <input type="text" class="form-control rounded-3 border-green" id="phone_number" formControlName="phone_number" placeholder="">
+          </div>
+          <!-- <input type="hidden" id="user_id" formControlName="user_id" value="{{user_id}}" placeholder="66969ff8928a92b7252014a9"> -->
+          </section>
+        <div>
+            <h5>Notification</h5>
+            <p>We would notify you about updates and Changes, Choose what else you would like to hear</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="comments" checked>
+                <label class="form-check-label" for="flexCheckChecked">Comments<br>
+                    Get notified when someones posts a comment.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="saves">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Saves<br>
+                    Get notified when your recipes are saved.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" formControlName="newrecipe">
+                <label class="form-check-label" for="flexCheckChecked">
+                    New recipe<br>
+                    Get notified when new recipes are upload by your favorite chefs.
+                </label>
+              </div>
+        </div>
+        <div class="form-footer">
+          <button type="button" (click)="submit()" class="btn auth-btn">Save</button>
+          <div class="xtrabtn">
+          <button type="button" class="btn auth-btn">Cancel</button>
+        </div>
+        </div>
+    </form>
+</div>
+
+<ng-template #modalcontent let-modal>
+	<div class="modal-header">
+    <img src="assets/Ellipse 20.png" alt="good">
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<h1><strong>SUCCESS</strong></h1>
+    <p><strong>You have Successfully updated your profile!</strong></p>
+	</div>
+	<div class="bottom">
+		<button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Continue</button>
+	</div>
+</ng-template>
