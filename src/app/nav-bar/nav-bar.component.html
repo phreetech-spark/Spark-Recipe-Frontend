@@ -19,7 +19,7 @@
             Recipe
           </li>
           <li>
-  
+
               <div class="dropdown">
                 <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   More <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,14 +46,14 @@
                 </ul>
               </div>
           </li>
-          
+
         </ul>
         <ul class="nav-links">
           <li class="user" *ngIf="isLoggedIn">
             <img src="assets/account_circle.png" class="user-icon" alt="account icon" routerLink="/profile">
           </li>
           <li *ngIf="!isLoggedIn">
-            <button class="btn login" [routerLink]="['/login']" >
+            <button class="btn login" [routerLink]="['/auth/login']" >
               Sign up/ Log in
             </button>
           </li>

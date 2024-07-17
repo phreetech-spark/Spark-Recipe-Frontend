@@ -86,7 +86,7 @@
     </form>
 </div>
 
-<ng-template #modalcontent let-modal>
+<ng-template #editProfileSuccessModalContent let-modal>
 	<div class="modal-header">
     <img src="assets/Ellipse 20.png" alt="good">
 		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
@@ -94,8 +94,5 @@
 	<div class="modal-body">
 		<h1><strong>SUCCESS</strong></h1>
     <p><strong>You have Successfully updated your profile!</strong></p>
-	</div>
-	<div class="bottom">
-		<button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Continue</button>
 	</div>
 </ng-template>
