@@ -14,8 +14,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './profile-edit.component.css'
 })
 export class ProfileEditComponent implements OnInit {
-  @ViewChild("modalcontent")modalcontent?:TemplateRef<any>
+  @ViewChild("editProfileSuccessModalContent") editProfileSuccessModalContent?: TemplateRef<any>
 profileform:FormGroup;
+user:any
 constructor(private fb: FormBuilder,private service:RecipeService, private modalService:NgbModal){
   this.profileform=this.fb.group({
     user_name:[],
@@ -36,24 +37,36 @@ constructor(private fb: FormBuilder,private service:RecipeService, private modal
   })
 }
 ngOnInit(): void {
+  const data = localStorage.getItem("loggedinuser")
+  if (data) {
+    const user = JSON.parse(data)
+    if (user) {
+      this.user = user
+    }
+  }
 }
 submit(){
   if (this.profileform.valid){
-    console.log("valid")
-  this.service.updateprofile(this.profileform.value).subscribe({
-    next(value) {
-      console.log(value)
-  
-    },
-    error(err) {
-      console.log(err)
-    }
-  })
-  this.openSm()
-}
-}
-openSm() {
-  this.modalService.open(this.modalcontent, { size: 'sm', centered: true });
-}
+    if (this.profileform.valid) {
+      console.log("valid")
+      const formValue = this.profileform.value;
+      formValue.user_id = this.user._id
+      this.service.updateprofile(formValue).subscribe({
+        next: (value) => {
+          console.log(value)
+          this.profileform.reset();
+          this.openSuccessModal()
 
+        },
+        error(err) {
+          console.log(err)
+        }
+      })
+    }
+
+}
+}
+openSuccessModal() {
+  this.modalService.open(this.editProfileSuccessModalContent, { size: 'lg', centered: true });
+}
 }

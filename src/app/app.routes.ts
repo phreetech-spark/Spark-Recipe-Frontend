@@ -18,83 +18,105 @@ import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 import { ConfirmemailComponent } from './confirmemail/confirmemail.component';
 import { ConfirmedEmailComponent } from './confirmed-email/confirmed-email.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { UnauthentcatedLayoutComponent } from './unauthentcated-layout/unauthentcated-layout.component';
+import { AuthenticatedLayoutComponent } from './authenticated-layout/authenticated-layout.component';
+import { IsLoggedInGuardService } from './is-logged-in.guard.service';
 
 export const routes: Routes = [
-   {path:'signup',
-    component: SignUpComponent},
-   {path:'login',
-    component: LoginComponent},
-    {path:'forgotpassword',
-        component:ForgotpasswordComponent
-    },
     {
-        path:'breakfastsearch',
-        component:BreakfastsearchComponent
-    },
-    {
-        path:'error',
-        component:ErrorComponent
-    },
-    {
-        path:'profile',
-        component:ProfileComponent
-    },
-    {
-        path:'footer',
-        component:FooterComponent
-    },
-    {
-        path:'tipsandtechnique',
-        component:TipsandtechniqueComponent
-    },
-    {
-        path:'quickandeasy',
-        component:QuickandeasyComponent
-    },
-    {
-        path:'homepage',
-        component:HomepageComponent
-    },
-    {
-        path:'profile-editrecipe',
-        component:ProfileEditrecipeComponent
-    },
-    {
-        path:'home',
-        component:HomeComponent
-    },
-    {
-        path:'addrecipe',
-        component:AddrecipeComponent
-    },
-    {
-        path:'accountmanagement',
-        component:AccountManagementComponent
-    },
-    {
-        path:'profile-edit',
-        component:ProfileEditComponent
-    },
-    {
-        path:'confirmemail',
-        component:ConfirmemailComponent
-    },
-    {
-        path:'confirmed-email',
-        component:ConfirmedEmailComponent
-    },
-    {
-        path:'resetpassword',
-        component:ResetpasswordComponent
-    },
-    {
-        path:'',
-        redirectTo:'homepage',
-        pathMatch:'full'
-    },
-    {
-        path:'**',
-        redirectTo:'homepage',
-        pathMatch:'full'
-    }
+        path: 'auth',
+        component: UnauthentcatedLayoutComponent,
+        children: [
+          {
+            path: 'signup',
+            component: SignUpComponent
+          },
+          {
+            path: 'login',
+            component: LoginComponent
+          },
+          {
+            path: 'forgotpassword',
+            component: ForgotpasswordComponent
+          },
+          {
+            path: 'confirmed-email',
+            component: ConfirmedEmailComponent
+          },
+          {
+            path: 'resetpassword',
+            component: ResetpasswordComponent
+          },
+        ]
+      },
+      {
+        path: '',
+        canActivate: [IsLoggedInGuardService],
+        component: AuthenticatedLayoutComponent,
+        children: [
+          {
+            path: 'breakfastsearch',
+            component: BreakfastsearchComponent
+          },
+          {
+            path: 'error',
+            component: ErrorComponent
+          },
+          {
+            path: 'profile',
+            component: ProfileComponent
+          },
+          {
+            path: 'tipsandtechnique',
+            component: TipsandtechniqueComponent
+          },
+          {
+            path: 'quickandeasy',
+            component: QuickandeasyComponent
+          },
+          {
+            path: 'profile-editrecipe',
+            component: ProfileEditrecipeComponent
+          },
+          {
+            path: 'addrecipe',
+            component: AddrecipeComponent
+          },
+          {
+            path: 'accountmanagement',
+            component: AccountManagementComponent
+          },
+          {
+            path: 'profile-edit',
+            component: ProfileEditComponent
+          },
+          {
+            path: 'confirmemail',
+            component: ConfirmemailComponent
+          },
+          {
+            path: '',
+            redirectTo: '/home',
+            pathMatch: 'full'
+          },
+        ]
+      },
+      // {
+      //   path: 'homepage',
+      //   component: HomepageComponent
+      // },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: '/home',
+        pathMatch: 'full'
+      }
 ]
