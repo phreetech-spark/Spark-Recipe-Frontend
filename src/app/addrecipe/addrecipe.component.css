@@ -20,5 +20,19 @@ label{
     padding-top: 20px;
 }
 .twotime input{
-    height: 350px;
+    height: 150px;
+}
+button{
+    background-color: green;
+    color: bisque;
+    
+}
+h2{
+    margin-left: 550px;
+}
+.thirdtime{
+    margin-left: 200px;
+}
+.me{
+    margin-left: 230px;
 }

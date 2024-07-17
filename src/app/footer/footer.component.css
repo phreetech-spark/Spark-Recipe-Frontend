@@ -48,4 +48,23 @@ input.form-control{
   font-weight: 700;
   font-size: 18px;
 }
-
+@media screen and (max-width: 767px){
+  .footer-container{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px){
+  .mobile-footer{
+    display: none;
+  }
+}
+@media screen and (max-width: 500px){
+  .footer-form-button{
+    width: 100%;
+  }
+}
+@media screen and (min-width:500px){
+  .mobile-footer-content{
+    display: flex;
+  }
+}

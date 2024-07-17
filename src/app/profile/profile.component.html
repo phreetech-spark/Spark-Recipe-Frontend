@@ -1,10 +1,21 @@
-<app-header></app-header>
 
 <div class="mainsection">
+  <div class="btn-group dropstart">
+    <img type="button" src="assets/menu2.png" alt="menubutton" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" style="width: 50px;">
+    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+      <li><p class="dropdown-item" type="button" routerLink="/accountmanagement">Account</p></li>
+      <li><p class="dropdown-item" type="button">Privacy</p></li>
+      <li><p class="dropdown-item" type="button">Notification</p></li>
+      <li><p class="dropdown-item" type="button">Saved Recipes</p></li>
+      <li><p class="dropdown-item" type="button">Help</p></li>
+      <li><p class="dropdown-item" type="button">Tell a Friend</p></li>
+      <li><p class="dropdown-item" type="button">Log Out</p></li>
+    </ul>
+  </div>
     <div class="mainsection-top">
         <img src="assets/ify.jpg" alt="girlpicture">
           <div class="wordify">
-            <h3>Ifeoma Gregory</h3>
+            <h3><strong>Ifeoma Gregory</strong></h3>
             <p>Lorem ipsum dolor sit amet consectetur. Laoreet eget molestie mus a sapien tempus arcu lectus. Nunc ullam<br>
              corper sem imperdiet dignissim neque viverra sed amet laoreet. Duis nulla etiam aliquet tellus lacus eget mi. Sed<br>
              ac dapibus magna vulputate malesuada eu felis. Id sem cras dis nisl interdum id. Lorem ipsum dolor sit amet<br>
@@ -14,7 +25,8 @@
             </p><br>
             <button>See More</button>
            </div>
-        
+           
+          </div>  
     </div>
     <div class="mainsection-bot">
         <div class="mainsection-bot-right">
@@ -36,5 +48,4 @@
             
         </div>
     </div>
-</div>
-<app-footer></app-footer>
+

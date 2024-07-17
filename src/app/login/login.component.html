@@ -1,50 +1,58 @@
-<div class="auth-section">
-  <div class="auth-section-left">
-    <div class="auth-section-left-content">
-      <header class="logo-container">
-        <img src="assets/logo.png" width="150" class="logo" alt="" srcset="">
-      </header>
-      <div>
-        <div class="auth-section-title-container">
-          <h3 class="auth-section-title">
-            WELCOME BACK!
-          </h3>
-          <p>Sign in to your account</p>
-        </div>
-        <div>
-          <form [formGroup]="loginform">
-            <div class="mb-4">
-              <label for="email" class="form-label fw-medium">Email</label><br>
-              <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-4">
-              <label for="password" class="form-label fw-medium">Password</label><br>
-              <input type="password" class="form-control rounded-3 border-green" id="password" formControlName="password"
-                placeholder="Enter your password">
-            </div>
-            <p>
-              <a routerLink="/forgotpassword" class="link">Forgot Password?</a>
-            </p>
-          </form>
-          <div class="form-footer">
-            <button type="button" (click)="submit()" class="btn auth-btn">Sign In</button>
-            <p class="text-center"> First time, click here <a routerLink="/signup" class="link">Sign Up</a><br><br>
-              or sign in with<br></p>
-              <div class="terms text-center">
-                <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/googleicon.png"> Sign in with Google</button><br>
-                <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/instagram.png"> Sign in with Instagram</button><br>
-                <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/facebook.png"> Sign in with Faacebook</button><br>
-              </div>
-          </div>
-        </div>
 
+<div class="auth-section">
+    <div class="auth-section-left">
+      <div class="auth-section-left-content">
+        <header class="logo-container">
+          <img src="assets/logo.png" width="150" class="logo" alt="" srcset="">
+        </header>
+        <div>
+          <div class="auth-section-title-container">
+            <h3 class="auth-section-title">
+              WELCOME BACK!
+            </h3>
+            <p>Sign in to your account</p>
+          </div>
+          <div>
+            <form [formGroup]="loginform">
+              <div class="mb-4">
+                <label for="email" class="form-label fw-medium">Email</label><br>
+                <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label fw-medium">Password</label><br>
+                <input type="password" class="form-control rounded-3 border-green" id="password" formControlName="password"
+                  placeholder="Enter your password">
+              </div>
+              <p>
+                <a routerLink="/forgotpassword" class="link">Forgot Password?</a>
+              </p>
+            </form>
+            <div class="form-footer">
+              <button type="button" (click)="submit()" class="btn auth-btn">Sign In</button>
+              <p class="text-center"> First time, click here <a routerLink="/signup" class="link">Sign Up</a><br><br>
+                or sign in with<br></p>
+                <div class="terms text-center">
+                  <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/googleicon.png"> Sign in with Google</button><br>
+                  <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/instagram.png"> Sign in with Instagram</button><br>
+                  <button class="btn d-inline-flex align-items-center gap-2"><img class="social-icon" src="assets/facebook.png"> Sign in with Facebook</button><br>
+                </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+    </div>
+    <div class="auth-section-right">
+      <img src="assets/loginchef.jpg" alt="chef">
     </div>
 
   </div>
-  <div class="auth-section-right">
-    <img src="assets/loginchef.jpg" alt="chef">
-  </div>
 
-</div>
+  <ng-template #modalcontent let-modal>
+    <div class="modal-body">
+      <h3>Incorrect username/password</h3>
+      <p>Please fill all fields correctly</p>
+    </div>
+  </ng-template>
 
