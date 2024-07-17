@@ -18,16 +18,17 @@ export class ProfileEditComponent implements OnInit {
 profileform:FormGroup;
 constructor(private fb: FormBuilder,private service:RecipeService, private modalService:NgbModal){
   this.profileform=this.fb.group({
-    username:[],
-    about:[],
+    user_name:[],
+    about_user:[],
     profilephoto:[],
-    fullname:[],
-    email:[],
+    full_name:[],
+    email_address:[],
     country:[],
-    streetaddress:[],
+    // user_id:[],
+    street_address:[],
     city:[],
     state:[],
-    phonenumber:[],
+    phone_number:[],
     comments:[],
     saves:[],
     newrecipe:[],
@@ -54,4 +55,5 @@ submit(){
 openSm() {
   this.modalService.open(this.modalcontent, { size: 'sm', centered: true });
 }
+
 }

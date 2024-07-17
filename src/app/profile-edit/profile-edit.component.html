@@ -6,12 +6,12 @@
         <h4>Profile</h4>
         <div class="mb-4 username">
             <label for="username" class="form-label fw-medium">username</label>
-            <input type="username" class="form-control rounded-3 border-green" id="username" formControlName="username" placeholder="">
+            <input type="username" class="form-control rounded-3 border-green" id="user_name" formControlName="user_name" placeholder="">
           </div>
           <div class="mb-4 about">
             <label for="about" class="form-label fw-medium">About</label>
             <div class="abeg">
-              <textarea type="about" class="form-control rounded-3 border-green" id="about" formControlName="about" rows="4" cols="6"></textarea>
+              <textarea type="about" class="form-control rounded-3 border-green" id="about_user" formControlName="about_user" rows="4" cols="6"></textarea>
             <p class="form-text" id="basic-addon4">Write a few words about yourself.</p>
             </div>
           </div>
@@ -25,11 +25,11 @@
           <h4>Personal Information</h4>
           <div class="mb-4 fullname">
             <label for="fullname" class="form-label fw-medium">Full Name</label>
-            <input type="fullname" class="form-control rounded-3 border-green" id="fullname" formControlName="fullname" placeholder="">
+            <input type="fullname" class="form-control rounded-3 border-green" id="full_name" formControlName="full_name" placeholder="">
           </div>
           <div class="mb-4 email">
             <label for="email" class="form-label fw-medium">Email</label>
-            <input type="email" class="form-control rounded-3 border-green" id="email" formControlName="email" placeholder="">
+            <input type="email" class="form-control rounded-3 border-green" id="email_address" formControlName="email_address" placeholder="">
           </div>
           <div class="mb-4 country">
             <label for="country" class="form-label fw-medium">Country</label>
@@ -37,7 +37,7 @@
           </div>
           <div class="mb-4 address">
             <label for="streetaddress" class="form-label fw-medium">Street Address</label>
-            <textarea type="address" class="form-control rounded-3 border-green" id="streetaddress" formControlName="streetaddress" rows="2" cols="6"></textarea>
+            <textarea type="address" class="form-control rounded-3 border-green" id="street_address" formControlName="street_address" rows="2" cols="6"></textarea>
           </div>
           <div class="mb-4 city">
             <label for="city" class="form-label fw-medium">City</label>
@@ -49,8 +49,9 @@
           </div>
           <div class="mb-4 number">
             <label for="phonenumber" class="form-label fw-medium">Phone Number</label>
-            <input type="number" class="form-control rounded-3 border-green" id="phonenumber" formControlName="phonenumber" placeholder="">
+            <input type="text" class="form-control rounded-3 border-green" id="phone_number" formControlName="phone_number" placeholder="">
           </div>
+          <!-- <input type="hidden" id="user_id" formControlName="user_id" value="{{user_id}}" placeholder="66969ff8928a92b7252014a9"> -->
           </section>
         <div>
             <h5>Notification</h5>
