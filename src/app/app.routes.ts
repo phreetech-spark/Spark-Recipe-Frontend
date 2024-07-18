@@ -1,11 +1,9 @@
 import { Routes } from '@angular/router';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { BreakfastsearchComponent } from './breakfastsearch/breakfastsearch.component';
 import { ProfileComponent } from './profile/profile.component';
-import { FooterComponent } from './footer/footer.component';
 import { TipsandtechniqueComponent } from './tipsandtechnique/tipsandtechnique.component';
 import { QuickandeasyComponent } from './quickandeasy/quickandeasy.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -20,7 +18,8 @@ import { ConfirmedEmailComponent } from './confirmed-email/confirmed-email.compo
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { UnauthentcatedLayoutComponent } from './unauthentcated-layout/unauthentcated-layout.component';
 import { AuthenticatedLayoutComponent } from './authenticated-layout/authenticated-layout.component';
-import { IsLoggedInGuardService } from './is-logged-in.guard.service';
+import { isLoggedInGuard } from './is-logged-in.guard';
+
 
 export const routes: Routes = [
     {
@@ -51,7 +50,7 @@ export const routes: Routes = [
       },
       {
         path: '',
-        canActivate: [IsLoggedInGuardService],
+        canActivate: [isLoggedInGuard],
         component: AuthenticatedLayoutComponent,
         children: [
           {
