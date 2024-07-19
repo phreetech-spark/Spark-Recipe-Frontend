@@ -34,7 +34,7 @@ export class SignUpComponent implements OnInit{
       this.service.createuser(this.signupform.value).subscribe({
         next:(value)=> {
           console.log(value)
-        this.router.navigate(["/confirmemail"])
+        this.router.navigate(["/auth/confirmemail"])
         },
         error(err) {
           console.log(err)
