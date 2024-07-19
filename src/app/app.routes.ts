@@ -46,6 +46,10 @@ export const routes: Routes = [
             path: 'resetpassword',
             component: ResetpasswordComponent
           },
+          {
+            path:'confirmemail',
+            component: ConfirmemailComponent
+          }
         ]
       },
       {
