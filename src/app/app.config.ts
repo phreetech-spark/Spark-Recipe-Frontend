@@ -11,7 +11,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,6 +21,7 @@ import { AddrecipeComponent } from './addrecipe/addrecipe.component';
 import { TipsandtechniqueComponent } from './tipsandtechnique/tipsandtechnique.component';
 import { QuickandeasyComponent } from './quickandeasy/quickandeasy.component';
 import { ErrorComponent } from './error/error.component';
+import { TokenInterceptorService } from './token-interceptor.service';
 
 NgModule({
   declarations: [
@@ -41,10 +42,13 @@ NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    routes, HttpClient,NgbModule]
+    routes, HttpClient,NgbModule],
+
 })
 
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),provideHttpClient()]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),provideHttpClient(),
+    {provide:HTTP_INTERCEPTORS,useClass:TokenInterceptorService,multi:true}
+  ]
 };
