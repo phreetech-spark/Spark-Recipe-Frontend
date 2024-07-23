@@ -31,4 +31,8 @@ export class RecipeService {
   profileinfo(): Observable<any> {
     return this.http.get("https://spark-recipe.vercel.app/userinformation");
   }
+
+  getToken(): string | null {
+    return localStorage.getItem('authToken');
+  }
 }
