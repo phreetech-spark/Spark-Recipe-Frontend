@@ -30,7 +30,7 @@ export class LoginComponent {
             const user=value.data
             if (user){
               localStorage.setItem("loggedinuser",JSON.stringify(user))
-              localStorage.setItem("authToken",user.token)
+              localStorage.setItem("authToken",user.verification_token)
               this.router.navigate(["/home"])
             }
             
