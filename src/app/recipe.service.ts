@@ -28,4 +28,7 @@ export class RecipeService {
   resetpassword(resetpassword:any):Observable<any>{
     return this.http.post("https://spark-recipe.vercel.app/resetpassword",resetpassword)
   }
+  profileinfo(): Observable<any> {
+    return this.http.get("https://spark-recipe.vercel.app/userinformation");
+  }
 }

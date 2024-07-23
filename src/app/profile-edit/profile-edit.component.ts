@@ -25,7 +25,6 @@ constructor(private fb: FormBuilder,private service:RecipeService, private modal
     full_name:[],
     email_address:[],
     country:[],
-    // user_id:[],
     street_address:[],
     city:[],
     state:[],
